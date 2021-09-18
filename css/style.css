@@ -565,7 +565,7 @@ a:hover {
 
 }
 
-@media (max-width: 520px) {
+@media (max-width: 540px) {
 
     .container {
         flex-wrap: wrap;
@@ -616,7 +616,7 @@ a:hover {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
 
     .main-content {
         display: flex;
