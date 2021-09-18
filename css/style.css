@@ -312,7 +312,8 @@ table {
 	border-radius: 8px;
 	user-select: none;
     text-align: center;
-    width: 150px;
+    font-size: 16px;
+    width: 155px;
     margin-bottom: 5px;
 }
 
@@ -332,8 +333,8 @@ table {
 .price {
     display: inline-block;
     width: 100%;
-    max-width: 457px;
-    min-width: 150px;
+    max-width: 472px;
+    min-width: 155px;
     border-radius: 8px; 
     text-align: center;
     margin: 10px 0 35px;
@@ -670,6 +671,7 @@ a:hover {
 @media (max-width: 393px) {
     .choice-of-edition {
         flex-direction: column;
+        font-size: 14px;
     }
 }    
 
