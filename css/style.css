@@ -313,7 +313,7 @@ table {
 	user-select: none;
     text-align: center;
     height: 35px;
-    width: 145px;
+    width: 150px;
     margin-bottom: 5px;
 }
 
@@ -333,7 +333,8 @@ table {
 .price {
     display: inline-block;
     width: 100%;
-    max-width: 445px;
+    max-width: 457px;
+    min-width: 150px;
     border-radius: 8px; 
     text-align: center;
     margin: 10px 0 35px;
