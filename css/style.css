@@ -159,6 +159,7 @@ table {
     flex-grow: 1;
     text-align: center;
     font-weight: 700;
+    transition: 0.3s;
 }
 
 .navigation a:hover {
@@ -311,6 +312,7 @@ table {
 	border-radius: 8px;
 	user-select: none;
     text-align: center;
+    height: 35px;
     width: 145px;
     margin-bottom: 5px;
 }
