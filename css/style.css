@@ -126,7 +126,7 @@ table {
 
 .search input {
     padding: 5px;
-    border: 1px solid #000;
+    border: 1px solid #2e2654;
 }
 
 .logo img {
@@ -198,6 +198,7 @@ table {
 .categories-bg {
     margin-top: 15px;
     margin-right: 15px;
+    display: inline-block;
 }
 
 .categories-bg a {
@@ -211,6 +212,7 @@ table {
 
 .recommendation a {
     border-bottom: 1px solid #2e2654;
+    display: inline-block;
 }
 
 .recommendation a:last-child {
@@ -568,9 +570,20 @@ a:hover {
 @media (max-width: 540px) {
 
     .container {
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 
+    .header-top .container {
+        justify-content: center;
+    }
     
     .header img {
         margin-bottom: 10px;
@@ -578,6 +591,10 @@ a:hover {
 
     .logo, .search {
         margin: 0 auto;
+    }
+
+    .mobile-menu {
+        margin: 5px 0;
     }
 
     .sidebar {
@@ -601,6 +618,10 @@ a:hover {
         border-top: 1px solid #2e2654;
     }
 
+    .price {
+        margin-right: 10px;
+    }
+
     .product-images {
         margin-top: 42px;
     }
@@ -609,10 +630,6 @@ a:hover {
         padding: 10px;
         width: calc(50% - 6px);
         margin: 0 auto;
-    }
-
-    .footer-top h2 {
-        margin-top: 25px;
     }
 }
 
@@ -638,12 +655,32 @@ a:hover {
         flex-direction: column-reverse;
     }
 
-    .product-item {
-        margin-left: 50px;
+    .product-images {
+        margin: 0 auto;
     }
 
     .promo .column {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 280px) {
+
+    .product-cover {
+        max-width: 90%;
+    }
+
+    .product-gallery, .product-name {
+        padding-right: 25px;
+    }
+
+    .product-info {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .promo .column {
+        width: 33%;
     }
 }
