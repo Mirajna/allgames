@@ -668,6 +668,12 @@ a:hover {
     }
 }
 
+@media (max-width: 393px) {
+    .choice-of-edition {
+        flex-direction: column;
+    }
+}    
+
 @media (max-width: 280px) {
 
     .product-cover {
