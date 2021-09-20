@@ -214,6 +214,7 @@ table {
 .recommendation a {
     border-bottom: 1px solid #2e2654;
     display: inline-block;
+    padding-bottom: 5px;
 }
 
 .recommendation a:last-child {
@@ -570,7 +571,7 @@ a:hover {
 
 }
 
-@media (max-width: 540px) {
+@media (max-width: 730px) {
 
     .container {
         display: flex;
@@ -600,25 +601,48 @@ a:hover {
         margin: 5px 0;
     }
 
+    .main-content {
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+    }
+
     .sidebar {
         margin: 0 auto;
         padding: 0;
+        order: 2;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100%;
+    }
+
+    .categories-bg {
+        width: 50%;
+        height: 50%;
+        margin-right: 120px;
+    }
+
+    .recommendation {
+        width: 50%;
+        height: 50%;
+    }
+
+    .recommendation img {
+        width: 100%;
     }
 
     .sidebar img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 5px;
     }
 
     .sidebar a {
-        text-align: center;
+        margin-bottom: 25px;
     }
 
     .product-block {
         border: none;
-        border-top: 1px solid #2e2654;
     }
 
     .price {
@@ -636,18 +660,7 @@ a:hover {
     }
 }
 
-@media (max-width: 414px) {
-
-    .main-content {
-        display: flex;
-        flex-flow: row nowrap;
-        height: 100%;
-    }
-    
-    .sidebar {
-        width: 30%;
-        height: 30%;
-    }
+@media (max-width: 485px) {
 
     .product-block {
         padding: 0;
@@ -662,6 +675,29 @@ a:hover {
         margin: 0 auto;
     }
 
+@media (max-width: 420px) {
+    
+    .sidebar {
+        width: 30%;
+        height: 30%;
+        display: block;
+        margin-right: 0 auto;
+    }
+
+    .categories-bg, .recommendation {
+        margin: 0 auto;
+    }
+
+    .sidebar a {
+        margin-bottom: 5px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100%;
+    }
+
     .promo .column {
         font-size: 12px;
         margin-bottom: 25px;
@@ -669,13 +705,14 @@ a:hover {
 }
 
 @media (max-width: 393px) {
+
     .choice-of-edition {
         flex-direction: column;
         font-size: 14px;
     }
 }    
 
-@media (max-width: 280px) {
+@media (max-width: 304px) {
 
     .product-cover {
         max-width: 90%;
